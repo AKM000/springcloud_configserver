@@ -1,0 +1,21 @@
+server:
+  port: 13001
+
+
+eureka:
+  instance:
+    instance-id: localhost
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10000/eureka
+
+
+info:
+  app.name: micro_provider
+  company.name: www.kkandhy.com
+  # “application.yml，${parameter}则是读取文件内部的变量值
+  # 若想读取pom.xml文件的变量应该使用@parameter@”
+  # 注意加上双引号，单引号也可以
+  build.artifactId:  "@project.artifactId@"
+  build.version: "@project.version@"
