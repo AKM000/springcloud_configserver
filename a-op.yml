@@ -1,0 +1,8 @@
+spring:
+        application:
+                name: MINGW64
+aa: vv
+bb: cc
+dd: aa
+
+            
