@@ -1,0 +1,17 @@
+server:
+  port: 10000
+
+eureka:
+  instance:
+    namespace: eureka_client_A
+    prefer-ip-address: true
+  #    instance-id: eureka_client_B
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:7000/eureka
+
+spring:
+  application:
+    name: provide
